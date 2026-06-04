@@ -26,9 +26,259 @@ Create a HTML file and include the needed Bootstrap components.
 Publish the website in the LocalHost.
 
 ## PROGRAM :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dribbble Clone</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">Dribbble</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shots</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Designers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Teams</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Community</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+
+            </ul>
+
+            <button class="btn btn-outline-light me-2">
+                Sign In
+            </button>
+
+            <button class="btn btn-primary">
+                Sign Up
+            </button>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- Hero -->
+
+<div class="container text-center py-5">
+
+    <h1 class="display-5 fw-bold">
+        Discover The World's Top Designers
+    </h1>
+
+    <p class="lead">
+        Explore creative designs, mobile apps, websites and UI inspirations.
+    </p>
+
+    <button class="btn btn-primary btn-lg">
+        Get Started
+    </button>
+
+</div>
+
+<!-- Gallery Section -->
+
+<div class="container">
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?1" class="card-img-top">
+                <div class="card-body">
+                    <h5>UI Dashboard</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?2" class="card-img-top">
+                <div class="card-body">
+                    <h5>Portfolio Design</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?3" class="card-img-top">
+                <div class="card-body">
+                    <h5>Landing Page</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?4" class="card-img-top">
+                <div class="card-body">
+                    <h5>Travel App</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?5" class="card-img-top">
+                <div class="card-body">
+                    <h5>Restaurant UI</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?6" class="card-img-top">
+                <div class="card-body">
+                    <h5>Banking App</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?7" class="card-img-top">
+                <div class="card-body">
+                    <h5>E-Commerce</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?8" class="card-img-top">
+                <div class="card-body">
+                    <h5>Admin Panel</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?9" class="card-img-top">
+                <div class="card-body">
+                    <h5>Healthcare App</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?10" class="card-img-top">
+                <div class="card-body">
+                    <h5>Music App</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?11" class="card-img-top">
+                <div class="card-body">
+                    <h5>Education Portal</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <img src="https://picsum.photos/300/200?12" class="card-img-top">
+                <div class="card-body">
+                    <h5>Food Delivery</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- About -->
+
+<div class="container py-5">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <h2>Why Choose Dribbble?</h2>
+
+            <p>
+                Dribbble helps designers showcase their creativity,
+                connect with professionals and discover inspiring work.
+            </p>
+
+            <button class="btn btn-success">
+                Learn More
+            </button>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <img src="https://picsum.photos/600/300"
+                 class="img-fluid rounded">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center p-4 mt-4">
+
+    <h5>Dribbble Clone</h5>
+
+    <p>Created By Shaajini</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+```
 
 
 ## OUTPUT:
+![alt text](<Screenshot 2026-06-05 012849.png>)
 
 
 ## RESULT:
